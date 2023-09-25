@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "503164937498",
+    "project_id": "prueba-e2e2e",
+    "storage_bucket": "prueba-e2e2e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:503164937498:android:19b90e989d74f2334db8a3",
+        "android_client_info": {
+          "package_name": "com.example.firebaseloginkotlin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "503164937498-93iuodamrnrqt1ggoj5v4nl934m47tdp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9BXhk9W_F9IbUpO4qFRt_zA_qZl8P4J8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "503164937498-93iuodamrnrqt1ggoj5v4nl934m47tdp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

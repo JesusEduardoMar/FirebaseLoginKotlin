@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ApoyoActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Cuadro de información del primer doctor -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_launcher_background"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp">
+
+                <!-- Elementos para mostrar la información del primer doctor -->
+                <ImageView
+                    android:id="@+id/doctorImage1"
+                    android:layout_width="110dp"
+                    android:layout_height="130dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/user" />
+
+                <TextView
+                    android:id="@+id/doctorName1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dr. John Doe"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:layout_below="@id/doctorImage1"
+                    android:layout_marginTop="8dp" />
+
+                <TextView
+                    android:id="@+id/doctorSpecialty1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Especialidad: Psiquiatría"
+                    android:textSize="16sp"
+                    android:layout_below="@id/doctorName1"
+                    android:layout_marginTop="8dp" />
+
+                <Button
+                    android:id="@+id/buttonDoctor1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Agendar Cita"
+                    android:layout_below="@id/doctorSpecialty1"
+                    android:layout_marginTop="16dp" />
+
+            </RelativeLayout>
+
+            <!-- Cuadro de información del segundo doctor -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_launcher_background"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp">
+
+                <!-- Elementos para mostrar la información del segundo doctor -->
+                <ImageView
+                    android:id="@+id/doctorImage2"
+                    android:layout_width="110dp"
+                    android:layout_height="130dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/user" />
+
+                <TextView
+                    android:id="@+id/doctorName2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dr. Jane Smith"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:layout_below="@id/doctorImage2"
+                    android:layout_marginTop="8dp" />
+
+                <TextView
+                    android:id="@+id/doctorSpecialty2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Especialidad: Psicología"
+                    android:textSize="16sp"
+                    android:layout_below="@id/doctorName2"
+                    android:layout_marginTop="8dp" />
+
+                <Button
+                    android:id="@+id/buttonDoctor2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Agendar Cita"
+                    android:layout_below="@id/doctorSpecialty2"
+                    android:layout_marginTop="16dp" />
+
+            </RelativeLayout>
+
+            <!-- Cuadro de información del tercer doctor -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_launcher_background"
+                android:padding="16dp">
+
+                <!-- Elementos para mostrar la información del tercer doctor -->
+                <ImageView
+                    android:id="@+id/doctorImage3"
+                    android:layout_width="110dp"
+                    android:layout_height="130dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/user" />
+
+                <TextView
+                    android:id="@+id/doctorName3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dr. Michael Johnson"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:layout_below="@id/doctorImage3"
+                    android:layout_marginTop="8dp" />
+
+                <TextView
+                    android:id="@+id/doctorSpecialty3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Especialidad: Neuropsicología"
+                    android:textSize="16sp"
+                    android:layout_below="@id/doctorName3"
+                    android:layout_marginTop="8dp" />
+
+                <Button
+                    android:id="@+id/buttonDoctor3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Agendar Cita"
+                    android:layout_below="@id/doctorSpecialty3"
+                    android:layout_marginTop="16dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
