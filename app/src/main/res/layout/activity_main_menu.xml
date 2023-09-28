@@ -20,24 +20,27 @@
             android:layout_margin="16dp"
             android:gravity="center"
             android:text="Healthy Mind"
-            android:textColor="@color/lavender"
-            android:textSize="40sp"/>
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:textColor="#00008b"
+            android:textSize="36sp"/>
 
         <TextView
+            android:id="@+id/amazonDesc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/amazonDesc"
             android:text="Viaja hacia el bienestar mental con HealthyMind"
-            android:textSize="14sp"
-            android:textColor="@color/lavender"
+            android:textSize="16sp"
+            android:textColor="#00008b"
             android:layout_marginStart="16dp"
-            android:layout_marginBottom="16dp"/>
+            android:layout_marginBottom="16dp"
+            android:typeface="serif" />
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="160dp"
+            android:layout_height="200dp"
             android:id="@+id/amazonImage"
-            android:src="@drawable/salud"
+            android:src="@drawable/salud_mental"
             android:scaleType="centerCrop"
             android:layout_marginHorizontal="16dp"
             android:layout_marginBottom="16dp" />
@@ -77,6 +80,8 @@
                         android:layout_height="wrap_content"
                         android:id="@+id/clothingName"
                         android:text="Apoyo psicológico"
+                        android:typeface="serif"
+                        android:textStyle="bold"
                         android:textSize="20sp"
                         android:textColor="@color/lavender"
                         android:layout_below="@id/clothingImage"
@@ -112,6 +117,8 @@
                         android:layout_height="wrap_content"
                         android:id="@+id/elecName"
                         android:text="Qué hacer"
+                        android:typeface="serif"
+                        android:textStyle="bold"
                         android:textSize="20sp"
                         android:textColor="@color/lavender"
                         android:layout_below="@id/elecImage"
@@ -155,6 +162,8 @@
                         android:layout_height="wrap_content"
                         android:id="@+id/homeName"
                         android:text="Mensajes"
+                        android:typeface="serif"
+                        android:textStyle="bold"
                         android:textSize="20sp"
                         android:textColor="@color/lavender"
                         android:layout_below="@id/homeImage"
@@ -190,6 +199,8 @@
                         android:layout_height="wrap_content"
                         android:id="@+id/beautyName"
                         android:text="Autoayuda"
+                        android:typeface="serif"
+                        android:textStyle="bold"
                         android:textSize="20sp"
                         android:textColor="@color/lavender"
                         android:layout_below="@id/beautyImage"
