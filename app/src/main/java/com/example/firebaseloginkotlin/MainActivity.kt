@@ -126,14 +126,21 @@ class MainActivity : AppCompatActivity() {
 
 
     private  fun updateUI () {
+        //Obtiene el usuario actualmente autenticado a través de auth.currentUser.
         val user = auth.currentUser
-
+        //Si el usuario está autenticado (user != null), se establece el correo electrónico del
+        // usuario en un TextView con la ID emailTextView.
+        // Luego, verifica si el usuario tiene un nombre establecido (user.displayName != null).
         if (user != null){
             binding.emailTextView.text = user.email
 
             if(user.displayName != null){
                 binding.nameTextView.text = user.displayName
                 binding.nameEditText.setText(user.displayName)
+
+                //Si el usuario tiene un nombre establecido, se establece ese nombre en otro TextView con la ID nameTextView,
+                // y se coloca el mismo nombre en un EditText con la ID nameEditText.
+                // Esto permite que el usuario vea su nombre actual y, si lo desea, lo edite.
             }
 
             Glide

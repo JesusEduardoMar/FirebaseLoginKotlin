@@ -75,17 +75,21 @@
                         android:layout_centerHorizontal="true"
                         android:layout_marginBottom="8dp" />
 
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/clothingName"
-                        android:text="Apoyo psicológico"
+                        android:text="Apoyo Profesional"
                         android:typeface="serif"
                         android:textStyle="bold"
                         android:textSize="20sp"
                         android:textColor="@color/lavender"
                         android:layout_below="@id/clothingImage"
-                        android:layout_centerHorizontal="true"/>
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:layout_gravity="center_horizontal"
+                    />
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
@@ -116,13 +120,15 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/elecName"
-                        android:text="Qué hacer"
+                        android:text="Bienestar Auditivo"
                         android:typeface="serif"
                         android:textStyle="bold"
                         android:textSize="20sp"
                         android:textColor="@color/lavender"
                         android:layout_below="@id/elecImage"
-                        android:layout_centerHorizontal="true"/>
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:layout_gravity="center_horizontal"/>
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
         </LinearLayout>
@@ -161,7 +167,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/homeName"
-                        android:text="Mensajes"
+                        android:text="Apoyo Mutuo"
                         android:typeface="serif"
                         android:textStyle="bold"
                         android:textSize="20sp"
@@ -198,13 +204,15 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:id="@+id/beautyName"
-                        android:text="Autoayuda"
+                        android:text="Consejos para el Bienestar"
                         android:typeface="serif"
                         android:textStyle="bold"
                         android:textSize="20sp"
                         android:textColor="@color/lavender"
                         android:layout_below="@id/beautyImage"
-                        android:layout_centerHorizontal="true"/>
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:layout_gravity="center_horizontal" />
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
         </LinearLayout>

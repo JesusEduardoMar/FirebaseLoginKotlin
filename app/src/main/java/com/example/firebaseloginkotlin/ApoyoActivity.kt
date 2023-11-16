@@ -8,7 +8,6 @@ import android.content.Intent
 import androidx.cardview.widget.CardView
 import android.widget.RelativeLayout
 
-
 class ApoyoActivity : AppCompatActivity() {
     private lateinit var apoyo: CardView
     override fun onCreate(savedInstanceState: Bundle?) {

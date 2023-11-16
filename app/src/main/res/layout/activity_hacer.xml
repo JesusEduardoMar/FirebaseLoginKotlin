@@ -6,110 +6,76 @@
     tools:context=".MainActivity"
     android:background="@drawable/fondohacer">
 
-    <ScrollView
+    <!-- Menú -->
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp"
+        android:id="@+id/menuLayout">
 
-        <LinearLayout
+        <ImageView
+            android:id="@+id/characterImageView"
+            android:layout_width="match_parent"
+            android:layout_height="221dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/saludo" />
+
+        <!-- Texto introductorio -->
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="16dp">
+            android:text="Bienvenido al Bienestar Auditivo"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
 
-            <TextView
-                android:id="@+id/titleTextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="24dp"
-                android:layout_marginBottom="16dp"
-                android:text="¡Bienvenido a la meditación!"
-                android:textSize="24sp"
-                android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sumérgete en un mundo de mindfulness y relajación"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
 
-            <ImageView
-                android:id="@+id/characterImageView"
-                android:layout_width="365dp"
-                android:layout_height="221dp"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="16dp"
-                android:layout_marginBottom="16dp"
-                android:src="@drawable/saludo" />
+        <!-- Botones de menú mejorados -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Audios de Estrés"
+            android:id="@+id/estresButton"
+            android:background="#2196F3"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
 
-            <TextView
-                android:id="@+id/welcomeTextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/characterImageView"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="8dp"
-                android:textColor="#000000"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Audios de Depresión"
+            android:id="@+id/depresionButton"
+            android:background="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Audios de Ansiedad"
+            android:id="@+id/ansiedadButton"
+            android:background="#FF5722"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/countdownTextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:layout_marginBottom="16dp"
-                android:textSize="48sp"
-                android:textStyle="bold" />
-
-            <Button
-                android:id="@+id/startButton"
-                android:layout_width="374dp"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/countdownTextView"
-                android:layout_centerHorizontal="true"
-                android:layout_marginBottom="16dp"
-                android:text="Iniciar meditación" />
-
-            <Button
-                android:id="@+id/button1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:text="Opción 1" />
-
-            <Button
-                android:id="@+id/button2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:text="Opción 2" />
-
-            <Button
-                android:id="@+id/button3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:text="Opción 3" />
-
-            <Button
-                android:id="@+id/button4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:text="Opción 4" />
-
-            <Button
-                android:id="@+id/pauseButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Pausar"
-                android:layout_marginBottom="8dp" />
-
-            <Button
-                android:id="@+id/stopButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Detener"
-                android:layout_marginBottom="8dp" />
-
-        </LinearLayout>
-
-    </ScrollView>
-
+    </LinearLayout>
 </RelativeLayout>
