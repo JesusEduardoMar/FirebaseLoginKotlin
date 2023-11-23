@@ -36,7 +36,7 @@
                     android:id="@+id/doctorName1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Dr. John Doe"
+                    android:text="María del Carmen Rodriguez Morales"
                     android:textSize="24sp"
                     android:textStyle="bold"
                     android:layout_below="@id/doctorImage1"

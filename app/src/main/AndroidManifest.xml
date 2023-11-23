@@ -29,9 +29,6 @@
             android:name=".AgendarCitaActivity"
             android:exported="false" />
         <activity
-            android:name=".PsiquiatriaActivity"
-            android:exported="false" />
-        <activity
             android:name=".MenuActivity"
             android:exported="false" />
         <activity
@@ -53,6 +50,18 @@
         <activity
             android:name=".ApoyoActivity"
             android:exported="false" />
+        <activity
+            android:name=".PsiquiatriaActivity"
+            android:exported="true">
+            <!-- Intent-filter para ser iniciado desde enlaces, por ejemplo, desde Google Meet -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="https" />
+            </intent-filter>
+        </activity>
+
         <activity
             android:name=".pantalla.SplashActivity"
             android:exported="true" >
