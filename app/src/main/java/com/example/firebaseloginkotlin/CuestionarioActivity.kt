@@ -10,7 +10,6 @@ import android.widget.Toast
 import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
-import android.view.View
 
 class CuestionarioActivity : AppCompatActivity() {
 
@@ -76,6 +75,10 @@ class CuestionarioActivity : AppCompatActivity() {
                 preguntaActual == preguntas.size -> {
                     showToast("Cuestionario completado")
                     prefManager.saveRespuestas(respuestas)
+
+                    val intent = Intent(this, CalendarActivity::class.java)
+                    intent.putExtra("respuestas", ArrayList(respuestas))
+                    startActivity(intent)
                     finish()
                 }
             }
@@ -83,8 +86,6 @@ class CuestionarioActivity : AppCompatActivity() {
 
         mostrarPreguntaActual()
     }
-
-    // ...
 
     private fun mostrarPreguntaActual() {
         if (preguntaActual < preguntas.size) {
@@ -97,14 +98,9 @@ class CuestionarioActivity : AppCompatActivity() {
             }
         } else {
             showToast("Cuestionario completado")
-            // Aquí puedes tomar decisiones basadas en las respuestas almacenadas en `respuestas`
-            // Por ejemplo, contar las respuestas y decidir qué hacer en función de los resultados.
-            // Puedes agregar esa lógica aquí.
             procesarRespuestas()
         }
     }
-
-// ...
 
     private fun procesarRespuestas() {
         val contadorNunca = respuestas.count { it == "Nunca" }
@@ -134,52 +130,31 @@ class CuestionarioActivity : AppCompatActivity() {
                 // Maneja este caso según tus necesidades
             }
         }
-
-        val intent = Intent(this, CalendarActivity::class.java)
-        startActivity(intent)
-
-        intent.putStringArrayListExtra("respuestas", ArrayList(respuestas))
-        startActivity(intent)
     }
 
     private fun mostrarSugerenciasBienestar() {
-        // Mostrar mensaje de bienestar
         showToast("¡Felicidades! Sigue cuidando de ti mismo/a.")
-        // Mostrar actividades de autocuidado
         showToast("Te sugerimos actividades de autocuidado, como meditación, paseos al aire libre y lectura.")
-        // Integrar calendario de bienestar
         showToast("Integra un calendario de bienestar para recordatorios diarios.")
     }
 
     private fun mostrarSugerenciasEstrésAnsiedad() {
-        // Sugerir técnicas de manejo del estrés
         showToast("Te sugerimos técnicas de manejo del estrés, como respiración profunda y yoga.")
-        // Sugerir actividades relajantes
         showToast("Prueba actividades relajantes como escuchar música tranquila y tomar baños relajantes.")
-        // Integrar registro de estrés
         showToast("Registra situaciones estresantes y respuestas emocionales en un diario.")
     }
 
     private fun mostrarSugerenciasDepresionAnsiedad() {
-        // Sugerir buscar apoyo profesional
         showToast("Te recomendamos buscar apoyo profesional para explorar tus sentimientos.")
-        // Sugerir actividades para el bienestar emocional
         showToast("Prueba actividades que fomenten el bienestar emocional, como hablar con amigos y practicar la gratitud.")
-        // Integrar agenda de apoyo
         showToast("Integra una agenda para sesiones con profesionales de la salud mental.")
     }
 
     private fun mostrarSugerenciasDepresionAnsiedadEstres() {
-        // Sugerir buscar ayuda urgente
         showToast("Es crucial que busques ayuda profesional de inmediato.")
-        // Proporcionar recursos de salud mental
         showToast("Proporciona enlaces a recursos de salud mental y líneas de ayuda de emergencia.")
-        // Integrar calendario de seguimiento
         showToast("Implementa un calendario de seguimiento para programar citas con profesionales.")
     }
-
-// ...
-
 
     private fun showToast(message: String) {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show()

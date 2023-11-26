@@ -1,127 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#87CEEB"
-    android:padding="16dp"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
     tools:context=".CuestionarioActivity">
 
-    <ScrollView
+    <TextView
+        android:id="@+id/preguntaTextView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+    <RadioGroup
+        android:id="@+id/opcionesRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/preguntaTextView"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical" />
 
-            <TextView
-                android:id="@+id/preguntaTextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Pregunta 1:"
-                android:textSize="24sp"
-                android:layout_centerHorizontal="true"
-                android:layout_marginBottom="16dp"
-                android:textColor="#FFFFFF"
-                android:textStyle="bold"
-                />
-
-            <RadioGroup
-                android:id="@+id/opcionesRadioGroup"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <RadioButton
-                    android:id="@+id/opcion1RadioButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Opción 1"
-                    android:textColor="#FFFFFF"
-                    android:textSize="18sp"
-                    />
-
-                <RadioButton
-                    android:id="@+id/opcion2RadioButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Opción 2"
-                    android:textColor="#FFFFFF"
-                    android:textSize="18sp"
-                    />
-
-                <RadioButton
-                    android:id="@+id/opcion3RadioButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Opción 3"
-                    android:textColor="#FFFFFF"
-                    android:textSize="18sp"
-                    />
-
-                <RadioButton
-                    android:id="@+id/opcion4RadioButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Opción 4"
-                    android:textColor="#FFFFFF"
-                    android:textSize="18sp"
-                    />
-            </RadioGroup>
-
-            <Button
-                android:id="@+id/siguienteButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Siguiente"
-                android:layout_below="@id/opcionesRadioGroup"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="16dp"
-                android:background="#FF8C00"
-                />
-
-            <TextView
-                android:id="@+id/mensajeTextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text=""
-                android:textColor="#FF0000"
-                android:textSize="16sp"
-                android:visibility="gone"/>
-
-            <!-- Agregando un ImageView para una imagen -->
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:src="@drawable/ic_logo"
-                android:scaleType="fitCenter"
-                />
-
-            <ProgressBar
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                style="?android:attr/progressBarStyleHorizontal"
-                android:progress="50"
-                />
-
-            <Button
-                android:id="@+id/verCalendarioButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Ver Calendario"
-                android:layout_below="@id/siguienteButton"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="16dp"
-                android:background="#FF8C00"/>
-
-
-        </LinearLayout>
-    </ScrollView>
+    <Button
+        android:id="@+id/siguienteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/opcionesRadioGroup"
+        android:layout_marginTop="16dp"
+        android:text="Siguiente" />
 
 </RelativeLayout>

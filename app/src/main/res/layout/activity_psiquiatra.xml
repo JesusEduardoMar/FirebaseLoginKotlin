@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F5F5F5"
     tools:context=".PsiquiatriaActivity">
 
     <TextView
@@ -10,10 +11,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="32dp"
         android:text="¡Agenda tu consulta!"
-        android:textSize="20sp"
-        android:textStyle="bold" />
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#4CAF50" />
 
     <EditText
         android:id="@+id/etNombrePaciente"
@@ -23,7 +25,9 @@
         android:layout_marginTop="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:hint="Nombre del paciente" />
+        android:hint="Nombre del paciente"
+        android:background="#FFFFFF"
+        android:textColor="#000000" />
 
     <EditText
         android:id="@+id/etEmail"
@@ -33,17 +37,34 @@
         android:layout_marginTop="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:hint="Correo electrónico" />
+        android:hint="Correo electrónico"
+        android:background="#FFFFFF"
+        android:textColor="#000000" />
 
     <!-- Agrega más campos según tus necesidades -->
+
+    <EditText
+        android:id="@+id/tvUrlCita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etEmail"
+        android:layout_marginTop="16dp"
+        android:text=""
+        android:textSize="16sp"
+        android:textColor="#2196F3" />
 
     <Button
         android:id="@+id/btnAgendarCita"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/etEmail"
-        android:layout_margin="16dp"
+        android:layout_below="@id/tvUrlCita"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#4CAF50"
         android:text="Agendar Cita"
+        android:textColor="#FFFFFF"
         android:textSize="18sp" />
 
     <TextView
@@ -53,7 +74,7 @@
         android:layout_below="@id/btnAgendarCita"
         android:layout_marginTop="16dp"
         android:text="Horario: Lunes a Viernes, 9:00 AM - 5:00 PM"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        android:textColor="#616161" />
 
 </RelativeLayout>
-
