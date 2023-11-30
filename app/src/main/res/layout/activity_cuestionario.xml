@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
     android:paddingLeft="16dp"
     android:paddingTop="16dp"
     android:paddingRight="16dp"
@@ -14,7 +15,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text=""
-        android:textSize="18sp" />
+        android:textSize="20sp"
+        android:textColor="#1a1a1a"
+        android:textStyle="italic"
+        android:gravity="center" />
 
     <RadioGroup
         android:id="@+id/opcionesRadioGroup"
@@ -30,6 +34,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/opcionesRadioGroup"
         android:layout_marginTop="16dp"
-        android:text="Siguiente" />
+        android:layout_centerHorizontal="true"
+        android:text="Siguiente"
+        android:textColor="#fff"
+        android:background="@drawable/rounded_button" />
 
 </RelativeLayout>
